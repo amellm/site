@@ -1,0 +1,53 @@
+/*rvb (0,57,85)*/
+
+/*balises HTML */
+
+body {
+	background-color: #f39093;
+}
+
+head{
+	background-color: #004C59;
+}
+section{
+    background-color: #f39093;
+}
+article{
+	margin-left: 100px;
+}
+aside{
+	background-color: #004C59;
+}
+footer{
+	background-color: #004C59;
+}
+
+/*élements de corps*/
+
+h1{
+	font-family:'Clicker Script', cursive;
+	color:  #F27487;
+	text-align: center;
+	background-color: #004C59;
+	font-size: 75px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+a{
+	text-decoration: none;
+}
+/*id */
+
+
+article li {
+	display: block;
+	float:left;
+	margin-left:180px;
+
+}
+
+/*class*/
+.clear {
+	clear:both;
+    
+}
