@@ -8,15 +8,16 @@
 	<meta charset="utf-8"/>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="robots" content="noindex, nofollow">
 </head>
 
 <body>
 
 <header> 
-	<h1>Le blog d'Amel <img src="logo2.jpg"></h1> 
+	<h1>Le cahier d'Amel <img src="logo2.jpg"></h1> 
 
 <div class="pull-center">
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" role="navigation" id="mainnav">
   <!-- this is a navbar -->
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,10 +33,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a class="btn" href="">Culture </a> </li>
-        <li class="active"><a class="btn" href="">Beauté </a> </li>
-        <li class="active"><a class="btn" href="">Voyages </a> </li>
-        <li class="active"><a class="btn" href="">Lifestyle </a> </li>
+        <li class="active"><a class="btn" href="http://www.culture.fr/">Culture </a> </li>
+        <li class="active"><a class="btn" href="http://www.sephora.fr/">Beauté </a> </li>
+        <li class="active"><a class="btn" href="http://voyagerloin.com/video/ces-francais-du-bout-du-monde-heureux-davoir-quitte-france/">Voyages </a> </li>
+        <li class="active"><a class="btn" href="http://www.larevuedekenza.fr/">Lifestyle </a> </li>
       </ul>
         
       <form class="navbar-form navbar-left" role="search">
@@ -63,27 +64,87 @@
 	
 		<h2> 
 		<a href=""> 
-			<img src=""/> Carroussel d'articles </a> 
-			<ul class="list-inline">
-				<li> <img src="http://babillages.net/wp-content/uploads/2014/04/bareminerals-01.jpg" class="aligncenter size-full wp-image-17152" width="370" height="400" alt="bareminerals-01" class="img-responsive" alt="Responsive image"> </li>
-				<li><img src="http://i1.wp.com/www.blogculturel.com/wp-content/uploads/2013/06/20130626-071304.jpg?resize=186%2C300" class="attachment-newsfeed wp-post-image" alt="20130626-071304.jpg" class="img-responsive" alt="Responsive image"> </li>
-				<li> <img src="warao.jpg" class="img-responsive" alt="Responsive image"> </li>
+		 <div id="my_carousel" class="carousel slide" data-ride="carousel">
+<!-- Bulles -->
+<ol class="carousel-indicators">
+    <li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#my_carousel" data-slide-to="1"></li>
+    <li data-target="#my_carousel" data-slide-to="2"></li>
+</ol>
+<!-- Slides -->
+<div class="carousel-inner">
+<!-- Page 1 -->
+<div class="item active">  
+    <div class="carousel-page">
+        <img src="bare.jpg" class="img-responsive" style="margin:0px auto;"/>
+    </div> 
+<div class="carousel-caption"> Beauté </div>
+</div>   
+
+<!-- Page 2 -->
+<div class="item"> 
+<div class="carousel-page">
+	<img src="vend.jpg" class="img-responsive  img-rounded" style="margin:0px auto;" />
+</div> 
+<div class="carousel-caption"> Culture </div>
+</div>  
+
+<!-- Page 3 -->
+<div class="item">  
+<div class="carousel-page">
+    <img src="warao.jpg" class="img-responsive  img-rounded" style="margin:0px auto;max-height:100%;"/>
+</div>  
+<div class="carousel-caption"> Voyages </div>
+</div>     
+</div>
+
+<!-- Contrôles -->
+<a class="left carousel-control" href="#my_carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a class="right carousel-control" href="#my_carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+</div>
+			
+		</h2>
+
+		<div class="separator"></div>
+
+		<h2> 
+			<a href=""> 
+			  <img src="bare.jpg"/> Beauté </a>
+		</h2>
+
+		<div class="separator"></div>
+
+		<h2> 
+			<a href=""> 
+			  <img src="warao.jpg"/> Culture </a>
+		</h2>
+
+		<div class="separator"></div>
+
+		<h2> 
+			<a href=""> 
+			  <img src="vend.jpg"/> Lifestyle </a>
 		</h2>
 </aside>
 
 <footer>
 	<div>
 	<ul class="list-inline">
-	<li> A propos de moi </li>
-	<li><img src="facebook.png" class="img-responsive" alt="Responsive image"> </li>
-	<li> <img src="twitter.png" class="img-responsive" alt="Responsive image"> </li>
-	<li> <img src="instagram.png" class="img-responsive" alt="Responsive image"> </li>
-	<li><img src="pinterest.png" class="img-responsive" alt="Responsive image"> </li>
+	<li> <a href=""> A propos de moi </a></li>
+	<li> <a href="https://www.facebook.com/amel.lamloum.92"> <img src="facebook.png" class="img-responsive" alt="Responsive image"> </a> </li>
+	<li> <a href="https://twitter.com/Tataooine"> <img src="twitter.png" class="img-responsive" alt="Responsive image"> </a> </li>
+	<li> <a href="http://instagram.com/ameldoro"> <img src="instagram.png" class="img-responsive" alt="Responsive image"> </a> </li>
+	<li> <a href=""> <img src="pinterest.png" class="img-responsive" alt="Responsive image"> </a> </li>
 	</ul>
 <div class="clear"> </div>
 </div>
 </footer>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 </html>
