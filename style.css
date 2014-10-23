@@ -1,20 +1,24 @@
-/*rvb (0,57,85)*/
+/*
+rose : #F27487
+bleu : #004C59
+*/
 
 /*balises HTML */
 
 body {
-	background-color: #f39093;
+	background-color: #004C59;
 }
 
 head{
 	background-color: #004C59;
 }
-section{
-    background-color: #f39093;
+nav{
+    background-color: white;
+    border-width:1px;
+ text-align: center;
+ font-family:'Clicker Script', cursive;
 }
-article{
-	margin-left: 100px;
-}
+
 aside{
 	background-color: #004C59;
 }
@@ -30,24 +34,40 @@ h1{
 	text-align: center;
 	background-color: #004C59;
 	font-size: 75px;
-	padding-bottom: 50px;
+	padding-bottom:5px;
 	padding-top: 50px;
 }
 a{
 	text-decoration: none;
+	color:#002740;
+	font-family:'Clicker Script', cursive;
+	font-size: 40px;
+	padding-bottom:5px;
+	padding-top: 5px;
 }
+
 /*id */
 
 
-article li {
-	display: block;
-	float:left;
-	margin-left:180px;
+nav li {
 
+	margin-left:150px;
+
+}
+footer{
+	text-align: center;
+	background-color: white;
+	padding-bottom:5px;
+	padding-top: 5px;
 }
 
 /*class*/
-.clear {
-	clear:both;
-    
+.container-fluid {
+	border-style:dashed;
+	background-color: #F27487;
+	font-family:'Clicker Script', cursive;
+}
+
+.btn{
+	font-size: 25px;
 }
